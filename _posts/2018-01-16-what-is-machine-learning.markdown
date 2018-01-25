@@ -5,6 +5,7 @@ subtitle: "What is machine learning?"
 date:   2018-01-16 10:19:54 +0900
 categories: machinelearning
 background: '/img/posts/machine-learning.png'
+author: cyc1am3n
 ---
 \* 이 포스트는 Coursera에 있는 Andrew Ng 교수님의 강의 [Machine Learning(링크)](https://www.coursera.org/learn/machine-learning)를 바탕으로 작성되었습니다.
 
