@@ -21,13 +21,13 @@ T = 체스를 하는 작업
 P = 경기에서 이 프로그램이 이길 확률
 이라고 할 수 있다.
 
-일반적으로 Machine Learning은 Supervised learning(지도 학습), Unsupervised learning(비지도 학습)으로 나뉜다.
+일반적으로 Machine Learning은 `Supervised learning(지도 학습)`, `Unsupervised learning(비지도 학습)`으로 나뉜다.
 
 ## Supervised Learning (지도 학습)
 
 지도학습에서는 data set(input)과 이미 그에 대한 정답(output)이 주어진다. input과 output 사이의 관계를 이용한다.
 
-지도학습은 **"회귀(regression)"**와 **"분류(classification)"**로 나뉜다.
+지도학습은 `"회귀(regression)"`와 `"분류(classification)"`로 나뉜다.
 회귀는 연속적인 출력값에 대해서 결과를 예측하는데, 이는 입력 변수를 연속적인 함수에 대응시킨다는 의미이다.
 분류는 이산적인 출력값에 대해서 결과를 예측하고, 이는 입력 변수를 개별 범주로 대응시킨다는 의미이다.
 
@@ -39,7 +39,7 @@ P = 경기에서 이 프로그램이 이길 확률
 이 문제는 "시세보다 많이 또는 적게 팔느냐"에 대한 결과를 대신 제시하면 분류 문제로 바꿀 수 있다. 여기에서는 가격을 기준으로 주택을 두 개의 개별 범주(시세보다 높음/낮음)로 분류한다.
 
 예시 2:
-(a) 회귀 - 사람의 사진이 주어지면 이를 통해 나이를 예측
+(a) 회귀 - 사람의 사진이 주어지면 이를 통해 나이를 예측  
 (b) 분류 - 종양이 있는 사람의 종양이 악성인지 양성인지를 예측
 
 ## Unsupervised Learning(비지도 학습)
