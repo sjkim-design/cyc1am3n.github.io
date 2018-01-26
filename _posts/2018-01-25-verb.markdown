@@ -1,16 +1,25 @@
 ---
 layout: post
 title:  "[Grammar] 헷갈리는 동사 관련 문법"
-subtitle: "크로스 밸리데이션에 대하여."
+subtitle: "헷갈리는 동사 문법"
 date:   2018-01-25 17:11:00 +0900
 categories: English
 background: '/img/posts/Cross-Validation.jpg'
 comments: true
 ---
-**1. 자동사가 목적어를 갖기 위해서는 꼭 전치사가 있어야 하지만, 타동사는 전치사 없이 목적어를 바로 가져야 한다.**
+##### 1. 자동사가 목적어를 갖기 위해서는 꼭 전치사가 있어야 하지만, 타동사는 전치사 없이 목적어를 바로 가져야 한다.
 
-| First Header  | Second Header | Third Header         |
-| :------------ | :-----------: | -------------------: |
-| First row     | Data          | Very long data entry |
-| Second row    | **Cell**      | *Cell*               |
-| Third row     | Cell that spans across two columns  ||
+![표1](/img/posts/verb-01.png){: width="100%" height="100%"}
+
+##### 2. 목적어(that절)를 하나만 가지는 3형식 동사와, 목적어를 2개 가지는 4형식 동사를 구별해서 써야 한다.
+
+![표1](/img/posts/verb-02.png){: width="100%" height="100%"}
+
+##### 3. 주절에 `제안, 요청, 의무`를 나타내는 동사/형용사가 나오면, 종속절에는 `동사원형`이 와야 한다. 
+
+**`동사`**: suggest 제안하다 propose 제안하다 recommend 추천하다 request 요청하다 ask 요청하다 require 요구하다 demand 요구하다 insist 주장하다 command 명령하다 order 명령하다  
+**`형용사`**: imperative 필수적인 essential 필수적인 necessary 필요한 important 중요한  
+**`명사`**: advice 충고  
+
++) 위의 동사/형용사/명사가 주절에 쓰여있더라도, 제안, 요청, 의무를 의미하지 않는다면 that절에 동사원형을 쓸 수 없다.    
+The article suggests that advertising creates higher consumer demand. (suggest가 '시사하다'라는 의미로 사용)
