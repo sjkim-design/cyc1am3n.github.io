@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "[Grammar] 헷갈리는 동사 관련 문법"
+subtitle: "크로스 밸리데이션에 대하여."
+date:   2018-01-25 17:11:00 +0900
+categories: English
+background: '/img/posts/Cross-Validation.jpg'
+comments: true
+---
+**1. 자동사가 목적어를 갖기 위해서는 꼭 전치사가 있어야 하지만, 타동사는 전치사 없이 목적어를 바로 가져야 한다.**
+
+| First Header  | Second Header | Third Header         |
+| :------------ | :-----------: | -------------------: |
+| First row     | Data          | Very long data entry |
+| Second row    | **Cell**      | *Cell*               |
+| Third row     | Cell that spans across two columns  ||

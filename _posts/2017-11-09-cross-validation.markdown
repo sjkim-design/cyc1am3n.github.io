@@ -5,6 +5,7 @@ subtitle: "크로스 밸리데이션에 대하여."
 date:   2017-11-09 10:19:54 +0900
 categories: machinelearning
 background: '/img/posts/Cross-Validation.jpg'
+comments: true
 ---
 머신러닝 모델의 타당성을 검증하는 방법 중의 하나로 `"크로스 밸리데이션(Cross-validation)"`이란게 있습니다. 한국어로는 "교차 검증"이라고 부릅니다.
 
