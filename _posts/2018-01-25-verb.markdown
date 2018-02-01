@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Grammar] 헷갈리는 동사 관련 문법"
+title:  "[Grammar] 동사의 형태와 종류"
 subtitle: "헷갈리는 동사 문법"
 date:   2018-01-25 17:11:00 +0900
 categories: English
