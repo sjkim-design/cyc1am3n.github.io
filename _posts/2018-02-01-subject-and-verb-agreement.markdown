@@ -16,7 +16,7 @@ comments: true
 
 ##### 2. 부분이나 전체를 나타내는 표현이 주어로 쓰이면 of 뒤의 명사에 동사를 수일치시킨다.
 
-![표1](/img/posts/sva-2.png){: width="100%" height="100%"}
+![표2](/img/posts/sva-2.png){: width="100%" height="100%"}
 
 ▶ Half of `our workforce` `takes` the subway to the office. (자사 직원의 절반은 사무실까지 지하철을 탄다.)  
 ▶ Half of `the people` in this room `are` medical doctors. (이 방에 있는 사람들의 절반은 의학 박사들이다.)
