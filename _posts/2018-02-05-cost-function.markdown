@@ -41,7 +41,7 @@ Machine Learning에서 값을 예측할 때 기존에 가지고 있는 데이터
 
 원하는 값을 예측하기 위해 세운 hypothesis function의 정확도를 측정하기 위해서 `Cost Function`을 사용한다.  
 
-Cost Function에서는 간단히 말하자면 가지고 있는 데이터의 x값(x<sub>i</sub>)을 hypothesis function에 넣은 h(x<sub>i</sub>)의 값과 실제 데이터의 y값(y<sub>i</sub>)의 차를 이용한다.  
+Cost Function에서는 간단히 말하자면 가지고 있는 데이터의 x값(x<sub>i</sub>)을 hypothesis function에 넣은 예측값 h(x<sub>i</sub>)의 값과 실제 데이터의 y값(y<sub>i</sub>)의 차를 이용한다.  
 
 한편, 설정한 함수가 예측한 값이 실제 데이터와 차이가 별로 없어야 좋은 예측이라고 할 수 있는데 그 차가 양수 혹은 음수이므로 그 차들을 바로 더하면 좋은 예측인지 판단할 수 없다.  
 
@@ -51,22 +51,26 @@ Cost Function에서는 간단히 말하자면 가지고 있는 데이터의 x값
 ![그림4](/img/posts/cost-function-4.png)
 {: refdef}
 
+{: refdef: style="text-align: center;"}  
+![그림5](/img/posts/cost-function-5.png)
+{: refdef}
+
 ## Linear Regression
 
 hypothesis function 중에서 가장 간단한 모델은 위에서 예로 들었던 일차함수이다.  
 
-이렇게 일차식으로 형성된 hypothesis function으로 원하는 값을 예측하는 것을 `linear regression`이라고 한다.  
+Cost Function을 최소로 하는 일차식으로 형성된 hypothesis function으로 원하는 값을 예측하는 것을 `linear regression`이라고 한다.  
 
 Linear Regression에서 cost function은
 
 {: refdef: style="text-align: center;"}  
-![그림5](/img/posts/cost-function-5.png)
+![그림6](/img/posts/cost-function-6.png)
 {: refdef}
 
 이고, θ<sub>0</sub>이 x축, θ<sub>1</sub>이 y축 이면서 J(θ)를 표현하는 그래프는 다음의 오른쪽과 같다.
 
 {: refdef: style="text-align: center;"}  
-![그림6](/img/posts/cost-function-6.png)
+![그림7](/img/posts/cost-function-7.png)
 {: refdef}
 
 J(θ)가 작을수록 설정한 hypothesis function을 잘 만들었다고 할 수 있는데 위의 그래프에서는 θ<sub>0</sub>이 대략 100, θ<sub>1</sub>이 대략 0.15일때 최소가 된다고 할 수 있다.  
