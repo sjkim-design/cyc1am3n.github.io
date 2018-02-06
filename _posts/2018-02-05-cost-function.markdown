@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Machine Learning] Cost Function & Linear Regression (Week 1)"
-subtitle: "What is linear regression?"
+title:  "[Machine Learning] Cost Function & Linear Regression"
+subtitle: "Week 1-2"
 date:   2018-02-05 10:52:54 +0900
 categories: machinelearning
 background: '/img/posts/machine-learning.png'
@@ -29,7 +29,7 @@ Machine Learning에서 값을 예측할 때 기존에 가지고 있는 데이터
 만약,  
 
 {: refdef: style="text-align: center;"}  
-![그림2](/img/posts/cost-function/cost-function-2.png)
+![그림2](/img/posts/cost-function/cost-function-2.png){: width="75%" height="75%"}
 {: refdef}
 실제로 이런 데이터의 분포를 가진다면 h(x)를 일차식의 형태로 세울 수 있을 테고 이를 식으로 나타내면 다음과 같다.(앞으로는 θ의 값을 어떻게 설정해야 하는지 볼 예정)
 
@@ -48,11 +48,11 @@ Linear Regression의 Cost Function에서는 간단히 말하자면 가지고 있
 따라서 m개의 데이터에 해당되는 차들의 제곱의 합(squared error)을 2m으로 나눈 값이 Cost Function의 식(J(θ))이다.(squared error의 mean에 2를 나눈 값; 2는 미분했을 때 나오는 상수를 제거하기 위해서 나눔)  
 
 {: refdef: style="text-align: center;"}  
-![그림4](/img/posts/cost-function/cost-function-4.png)
+![그림4](/img/posts/cost-function/cost-function-4.png){: width="55%" height="55%"}
 {: refdef}
 
 {: refdef: style="text-align: center;"}  
-![그림5](/img/posts/cost-function/cost-function-5.png)
+![그림5](/img/posts/cost-function/cost-function-5.png){: width="75%" height="75%"}
 {: refdef}
 
 ## Linear Regression
@@ -64,13 +64,13 @@ Cost Function을 최소로 하는 일차식으로 형성된 hypothesis function�
 Linear Regression에서 cost function은
 
 {: refdef: style="text-align: center;"}  
-![그림6](/img/posts/cost-function/cost-function-6.png)
+![그림6](/img/posts/cost-function/cost-function-6.png){: width="60%" height="60%"}
 {: refdef}
 
 이고, θ<sub>0</sub>이 x축, θ<sub>1</sub>이 y축 이면서 J(θ)를 표현하는 그래프는 다음의 오른쪽과 같다.
 
 {: refdef: style="text-align: center;"}  
-![그림7](/img/posts/cost-function/cost-function-7.png)
+![그림7](/img/posts/cost-function/cost-function-7.png){: width="100%" height="100%"}
 {: refdef}
 
 J(θ)가 작을수록 설정한 hypothesis function을 잘 만들었다고 할 수 있는데 위의 그래프에서는 θ<sub>0</sub>이 대략 100, θ<sub>1</sub>이 대략 0.15일때 최소가 된다고 할 수 있다.  

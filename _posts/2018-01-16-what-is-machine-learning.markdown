@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Machine Learning] What is Machine Learning? (Week 1)"
-subtitle: "What is machine learning?"
+title:  "[Machine Learning] What is Machine Learning?"
+subtitle: "Week 1-1"
 date:   2018-01-16 10:19:54 +0900
 categories: machinelearning
 background: '/img/posts/machine-learning.png'
