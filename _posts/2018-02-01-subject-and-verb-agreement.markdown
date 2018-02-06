@@ -3,7 +3,7 @@ layout: post
 title:  "[Grammar] 주어와의 수일치"
 subtitle: "헷갈리는 동사 문법"
 date:   2018-02-01 15:53:00 +0900
-categories: English
+categories: etc
 background: '/img/posts/english.jpg'
 comments: true
 ---

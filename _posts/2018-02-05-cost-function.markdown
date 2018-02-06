@@ -21,7 +21,7 @@ Machine Learning에서 값을 예측할 때 기존에 가지고 있는 데이터
 또한 기존에 m개의 데이터가 있다고 한다면 i번째 데이터의 특성 값을 x<sub>i</sub>라 하고 그에 대응되는 결과 값을 y<sub>i</sub>이라고 하자.  
 
 {: refdef: style="text-align: center;"}  
-![그림1](/img/posts/cost-function-1.png)
+![그림1](/img/posts/cost-function/cost-function-1.png)
 {: refdef}
 
 한편, Machine Learning에서는 예측하려는 값에 대한 함수를 설정한다. 보통 데이터의 분포를 보고 함수의 개형을 다항함수, 지수함수 등의 형태로 잡는데 이러한 함수를 `hypothesis function`이라 하고 h(x)라고 쓴다.  
@@ -29,30 +29,30 @@ Machine Learning에서 값을 예측할 때 기존에 가지고 있는 데이터
 만약,  
 
 {: refdef: style="text-align: center;"}  
-![그림2](/img/posts/cost-function-2.png)
+![그림2](/img/posts/cost-function/cost-function-2.png)
 {: refdef}
 실제로 이런 데이터의 분포를 가진다면 h(x)를 일차식의 형태로 세울 수 있을 테고 이를 식으로 나타내면 다음과 같다.(앞으로는 θ의 값을 어떻게 설정해야 하는지 볼 예정)
 
 {: refdef: style="text-align: center;"}  
-![그림3](/img/posts/cost-function-3.png)
+![그림3](/img/posts/cost-function/cost-function-3.png)
 {: refdef}
 
 ## Cost Function
 
 원하는 값을 예측하기 위해 세운 hypothesis function의 정확도를 측정하기 위해서 `Cost Function`을 사용한다.  
 
-Cost Function에서는 간단히 말하자면 가지고 있는 데이터의 x값(x<sub>i</sub>)을 hypothesis function에 넣은 예측값 h(x<sub>i</sub>)의 값과 실제 데이터의 y값(y<sub>i</sub>)의 차를 이용한다.  
+Linear Regression의 Cost Function에서는 간단히 말하자면 가지고 있는 데이터의 x값(x<sub>i</sub>)을 hypothesis function에 넣은 예측값 h(x<sub>i</sub>)의 값과 실제 데이터의 y값(y<sub>i</sub>)의 차를 이용한다.  
 
 한편, 설정한 함수가 예측한 값이 실제 데이터와 차이가 별로 없어야 좋은 예측이라고 할 수 있는데 그 차가 양수 혹은 음수이므로 그 차들을 바로 더하면 좋은 예측인지 판단할 수 없다.  
 
 따라서 m개의 데이터에 해당되는 차들의 제곱의 합(squared error)을 2m으로 나눈 값이 Cost Function의 식(J(θ))이다.(squared error의 mean에 2를 나눈 값; 2는 미분했을 때 나오는 상수를 제거하기 위해서 나눔)  
 
 {: refdef: style="text-align: center;"}  
-![그림4](/img/posts/cost-function-4.png)
+![그림4](/img/posts/cost-function/cost-function-4.png)
 {: refdef}
 
 {: refdef: style="text-align: center;"}  
-![그림5](/img/posts/cost-function-5.png)
+![그림5](/img/posts/cost-function/cost-function-5.png)
 {: refdef}
 
 ## Linear Regression
@@ -64,13 +64,13 @@ Cost Function을 최소로 하는 일차식으로 형성된 hypothesis function�
 Linear Regression에서 cost function은
 
 {: refdef: style="text-align: center;"}  
-![그림6](/img/posts/cost-function-6.png)
+![그림6](/img/posts/cost-function/cost-function-6.png)
 {: refdef}
 
 이고, θ<sub>0</sub>이 x축, θ<sub>1</sub>이 y축 이면서 J(θ)를 표현하는 그래프는 다음의 오른쪽과 같다.
 
 {: refdef: style="text-align: center;"}  
-![그림7](/img/posts/cost-function-7.png)
+![그림7](/img/posts/cost-function/cost-function-7.png)
 {: refdef}
 
 J(θ)가 작을수록 설정한 hypothesis function을 잘 만들었다고 할 수 있는데 위의 그래프에서는 θ<sub>0</sub>이 대략 100, θ<sub>1</sub>이 대략 0.15일때 최소가 된다고 할 수 있다.  

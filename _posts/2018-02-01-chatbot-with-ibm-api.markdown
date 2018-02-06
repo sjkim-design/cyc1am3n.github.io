@@ -3,7 +3,7 @@ layout: post
 title:  "[AI] IBM API를 이용해 손쉽게 chatbot 만들기"
 subtitle: "Watson api를 통한 chatbot 구현"
 date:   2018-02-01 15:53:00 +0900
-categories: AI
+categories: machinelearning
 background: '/img/posts/machine-learning.png'
 comments: true
 ---

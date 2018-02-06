@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "[이대 디저트] 그릭요거트 맛집 Greek Day"
+subtitle: ""
+date:   2018-02-06 09:52:54 +0900
+categories: life
+background: '/img/posts/food.jpg'
+author: cyc1am3n
+comments: true
+---
+이대 근처에 있는 그릭요거트 맛집 Greek Day를 갔다.  
+
+혼자 사는 탓에 요거트를 잘 안먹게 되었는데 이번 기회에 요거트에 눈을 뜨게 되었달까..  
+
+여기는 그릭요거트만 하는 집인데 지금까지 먹어봤던 요거트보다 훨씬 꾸덕한게 치즈먹는 느낌이었다.  
+
+메뉴판 사진을 못 찍어서 아쉽긴한데, 요거트랑 사이즈를 먼저 고르고 토핑을 고르는 식으로 주문을 받는다.(요거트는 플레인과 허니가 있는데 가격은 같다)  
+
+나는 허니 미디움 사이즈(2800원)에 토핑은 런던블루세트(그래놀라, 딸기, 바나나, 블루베리, 시즈닝아몬드, 크랜배리: 2400원)을 주문했다.  
+
+{: refdef: style="text-align: center;"}  
+![런던블루](/img/posts/greek-day.jpg){: width="100%" height="100%"}
+{: refdef}
+
+왼쪽이 내가 주문한 허니 런던블루이고, 오른쪽이 혜짱이 주문한 플레인 런던블루이다.  
+
+사실 많이 배고팠을때 갔던 거여서 요거트 나왔을 때 더 큰 사이즈로 시켰어야 했었는데 아주 적당했던 것 같다.  
+
+밀도가 높은 요거트여서 그런지 든든한게 아침식사로 딱일 듯 싶다.(디저트가 아니라 식사 같은..)  
+
+토핑도 내가 좋아하는 것들이 다 들어있었고, 요거트랑도 잘 어울렸다.  
+
+다음에 이대에 갈 일이 있으면 또 먹으러 가야겠다.  
+
+그땐 귤팡을 먹어야지...!  
+
+<table cellpadding="0" cellspacing="0" width="462"> <tr> <td style="border:1px solid #cecece;"><a href="https://map.naver.com/?searchCoord=f22bb295dd4afe76ed610c387e3e7d5c0ca45e503d7042162e004f806a4f9850&query=6re466at642w7J20&tab=1&lng=ec96ebd1ee319cb3605653168cddc3c0&mapMode=0&mpx=09290610%3A37.5804751%2C127.0188254%3AZ11%3A0.0326433%2C0.0145588&lat=655d94ef607a6d631a847099074af821&dlevel=12&enc=b64&menu=location" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1517884706103_-1180621432" width="460" height="340" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr> <tr> <td> <table cellpadding="0" cellspacing="0" width="100%"> <tr> <td height="30" bgcolor="#f9f9f9" align="left" style="padding-left:9px; border-left:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="font-family: tahoma; font-size: 11px; color:#666;">2018.2.6</span>&nbsp;<span style="font-size: 11px; color:#e5e5e5;">|</span>&nbsp;<a style="font-family: dotum,sans-serif; font-size: 11px; color:#666; text-decoration: none; letter-spacing: -1px;" href="https://map.naver.com/?searchCoord=f22bb295dd4afe76ed610c387e3e7d5c0ca45e503d7042162e004f806a4f9850&query=6re466at642w7J20&tab=1&lng=ec96ebd1ee319cb3605653168cddc3c0&mapMode=0&mpx=09290610%3A37.5804751%2C127.0188254%3AZ11%3A0.0326433%2C0.0145588&lat=655d94ef607a6d631a847099074af821&dlevel=12&enc=b64&menu=location" target="_blank">지도 크게 보기</a> </td> <td width="98" bgcolor="#f9f9f9" align="right" style="text-align:right; padding-right:9px; border-right:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="float:right;"><span style="font-size:9px; font-family:Verdana, sans-serif; color:#444;">&copy;&nbsp;</span>&nbsp;<a style="font-family:tahoma; font-size:9px; font-weight:bold; color:#2db400; text-decoration:none;" href="http://www.nhncorp.com" target="_blank">NAVER Corp.</a></span> </td> </tr> </table> </td> </tr> </table>
