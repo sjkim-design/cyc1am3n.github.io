@@ -24,7 +24,7 @@ comments: true
 
 이 최소값은 cost function의 미분을 통해서 구할 수 있는데, 어떤 점에서 미분을 해서 나온 기울기 값이 최소값으로 향하는 방향을 제시한다는 것이다.  
 
-이런 방법으로 θ를 구하는 방법이 `gradient descent` 의 algorithm이다.
+이런 방법으로 θ를 구하는 게 `gradient descent` 의 algorithm이다.
 
 한편 이렇게 미분을 통해 나온 기울기 값으로 점점 최소값으로 향할 때 얼마만큼 이동할지는 learning rate인 상수값으로 설정하는데 보통 learning rate는 α라고 쓴다.  
 
@@ -40,7 +40,7 @@ learning rate 이야기는 잠시 후에 하고 일단 이렇게 cost function�
 ![그림3](/img/posts/gradient-descent/gradient-descent-3.png)
 {: refdef}
 
-위 사진을 보면 simultaneous update와 그렇지 않은 update의 차이를 알 수 있을 것이다.  
+위를 보면 simultaneous update와 그렇지 않은 update의 차이를 알 수 있을 것이다.  
 
 이제 learning rate를 어떻게 설정해야 하는지 생각해보자.  
 
@@ -92,6 +92,6 @@ traning set이 1개라고 했을 때, Cost function을 편미분한 값은 다�
 
 그래서 Gradient Descent는 convex한 cost function에서만 해를 구할 수 있다.  
 
-Linear Regression은 quadratic function이므로 local optimum이 global optimum이고 Gradient Descent를 이용하면 최적의 hypothesis function을 만들 수 있다.  
+Linear Regression에서 cost function은 quadratic 하므로 local optimum이 global optimum이고 Gradient Descent를 이용하면 최적의 hypothesis function을 만들 수 있다.  
 
 다음 포스팅에서는 Multivariate Linear Regression에 대해서 알아보겠다.
