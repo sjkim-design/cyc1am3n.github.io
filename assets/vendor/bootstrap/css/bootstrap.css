@@ -190,8 +190,12 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Nanum Gothic Coding;
+  font-family: 'Nanum Myeongjo';
   font-size: 1em;
+}
+
+.language-ruby {
+  font-family: 'Nanum Gothic Coding';
 }
 
 pre {
@@ -538,6 +542,7 @@ pre {
   background-color: #fdf6e3;
   overflow-x: auto;
   display: block;
+  font-family: 'Nanum Gothic Coding', serif;
   font-size: 87.5%;
   color: #212529;
 }

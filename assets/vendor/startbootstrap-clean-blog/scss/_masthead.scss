@@ -31,6 +31,7 @@ header.masthead {
     h1 {
       font-size: 50px;
       margin-top: 0;
+      @include sans-serif-font;
     }
     .subheading {
       font-size: 24px;
@@ -58,8 +59,7 @@ header.masthead {
     .subheading {
       font-size: 24px;
       font-weight: 600;
-      margin: 10px 0 30px;
-      @include sans-serif-font;
+      margin: 10px 0 30px;      
     }
     .meta {
       font-size: 20px;
