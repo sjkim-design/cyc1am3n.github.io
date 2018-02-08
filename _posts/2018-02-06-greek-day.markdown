@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[이대 디저트] 그릭요거트 맛집 Greek Day"
+title:  "[이대 디저트] 그릭요거트 맛집 Greek Day(그릭데이)"
 subtitle: ""
 date:   2018-02-06 09:52:54 +0900
 categories: life
