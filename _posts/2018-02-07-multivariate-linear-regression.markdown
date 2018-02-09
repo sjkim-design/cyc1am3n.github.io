@@ -84,7 +84,7 @@ input value가 고르지 못할 때, 작은 범위에서는 θ가 천천히 변�
 
 gradient descent를 이용해서 θ를 구할 때, Cost function 즉 J(θ)가 매 반복마다 줄어야한다.  
 
-보통 gradient descent에서 J(θ)가 iteration 한 번에 아주 작은 값(ex. 10<sup>-3</sup>) 보다 적게 줄어들면 수렴한다고 판단한다.  
+보통 gradient descent에서 J(θ)가 iteration 한 번에 아주 작은 값(ex. 10<sup>-3</sup>) 보다 적게 줄어들면 `수렴`한다고 판단한다.  
 
 그런데 반복할 때 마다 J(θ)가 줄어들거나 수렴하지 않고 증가한다면 문제는 learning rate에 있다.  
 
@@ -101,7 +101,7 @@ J(θ)가 너무 천천히 줄어드는 것 또한 learning rate 설정의 오류
 
 ## Features and Polynomial Regression  
 
-주어진 data의 feature를 잘 분석하면 성능 향상에 도움이 되는데, 여러 개의 feature를 조합해 하나로 만들 수도 있다.  
+주어진 data의 feature를 잘 분석하면 성능 향상에 도움이 되는데, `여러 개의 feature를 조합해 하나로 만들 수도 있다.`  
 
 예를 들면, 집 값을 예측하기 위해 집의 frontage(x<sub>1</sub>), depth(x<sub>2</sub>)라는 feature가 있다고 했을 때 이 두 개를 곱한 area(x<sub>3</sub>=x<sub>1</sub>x<sub>2</sub>)라는 새로운 feature를 만들 수 있다는 말이다.  
 
