@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "[Grammar] 헷갈리는 동명사 문법"
+subtitle: ""
+date:   2018-02-18 23:41:00 +0900
+categories: etc
+background: '/img/posts/english.jpg'
+comments: true
+---
+##### 1. `동명사`를 목적어로 갖는 동사들이 있다.
+
+![표1](/img/posts/gerund/gerund-1.png){: width="100%" height="100%"}
+
+My manager will consider `giving` me a week's vacation  .
+▶ consider의 목적어로는 to 부정사(to give)가 아닌 동명사(giving)가 와야한다.  
+  
+
+##### 2. 동명사와 to 부정사를 `모두` 목적어로 갖는 동사들이 있다.
+
+<strong>· 동명사가 목적어일 때와 to 부정사가 목적어일 때 문장의 의미 변화가 없는 동사들</strong>  
+![표2](/img/posts/gerund/gerund-2.png){: width="100%" height="100%"}
+
+Jane has just begun (`learning`, `to learn`) to drive.    
+▶ 동사 begin은 뒤에 동명사(learning)와 to 부정사(to learn)를 모두 목적어로 취하며, 의미 차이는 없다.
+
+<strong>· 동명사가 목적어일 떄와 to부정사가 목적어일떄 문장의 의미 변화가 있는 동사들</strong>  
+![표3](/img/posts/gerund/gerund-3.png){: width="100%" height="100%"}
+
+Jim forgot `locking` / `to lock` the door. Jim은 문을 잠근 것을 / 잠가야 하는 것을 잊었다.  
+▶ 동사 forget의 목적어가 동명사(locking)일 때는 과거 의미를, to 부정사(to lock)일 때는 미래 의미를 나타낸다.
+
+`+) advise, allow, permit, forbid와 같은 동사들은 '동사 + 동명사' 또는 '동사 + 목적어 + to 부정사' 형태를 갖는다.`  
+The museum dose not permit `eating / people to eat` on the premises.
+  
+
+##### 3. 동명사구 관용 표현
+![표4](/img/posts/gerund/gerund-4.png){: width="100%" height="100%"}  
+  
+
+##### 4. 전치사 to + 동명사
+![표5](/img/posts/gerund/gerund-5.png){: width="100%" height="100%"}  
+
+`+) 두 개 이상의 '전치사 to + 동명사'가 접속사로 연결된 경우, 전치사 to 다음에는 반드시 동명사가 나와야 한다.`  
+I am looking forward to meeting you ar the conference and to ~~discuss~~(→`to discussing`) this further.  
+
+`+) 전치사 to 다음에는 명사가 올 수도 있다.`  
+We are looking forward to the `jazz concert` tomorrow night.
