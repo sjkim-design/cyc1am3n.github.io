@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "[Machine Learning] Gradient Descent"
-subtitle: "Week 1-3"
+subtitle: "「 Machine Learning 」 lecture summary #3"
 date:   2018-02-06 17:17:54 +0900
-categories: machinelearning
+categories: computerscience
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true

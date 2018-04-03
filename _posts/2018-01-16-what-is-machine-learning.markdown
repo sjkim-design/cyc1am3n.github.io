@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "[Machine Learning] What is Machine Learning?"
-subtitle: "Week 1-1"
+subtitle: "「 Machine Learning 」 lecture summary #1"
 date:   2018-01-16 10:19:54 +0900
-categories: machinelearning
+categories: computerscience
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true

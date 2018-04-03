@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "[Machine Learning] Cost Function & Linear Regression"
-subtitle: "Week 1-2"
+subtitle: "「 Machine Learning 」 lecture summary #2"
 date:   2018-02-05 10:52:54 +0900
-categories: machinelearning
+categories: computerscience
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true

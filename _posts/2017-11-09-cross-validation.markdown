@@ -3,7 +3,7 @@ layout: post
 title:  "크로스 밸리데이션(Cross-validation)"
 subtitle: "크로스 밸리데이션에 대하여."
 date:   2017-11-09 10:19:54 +0900
-categories: machinelearning
+categories: computerscience
 background: '/img/posts/Cross-Validation.jpg'
 comments: true
 ---

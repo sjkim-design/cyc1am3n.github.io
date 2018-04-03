@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "[Machine Learning] Multivariate Linear Regression"
-subtitle: "Week 2-1"
+subtitle: "「 Machine Learning 」 lecture summary #4"
 date:   2018-02-09 15:01:54 +0900
-categories: machinelearning
+categories: computerscience
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true
