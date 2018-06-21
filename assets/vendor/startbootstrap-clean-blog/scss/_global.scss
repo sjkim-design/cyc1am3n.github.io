@@ -1,5 +1,6 @@
 // Global styling for this template
 @import url(https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(bw.css);
 
 body {
   font-family: 'Nanum Myeongjo', serif;
@@ -63,6 +64,10 @@ blockquote {
   text-align: center;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.language-python {
+  font-family: 'Nanum Gothic Coding';
 }
 
 ::-moz-selection {

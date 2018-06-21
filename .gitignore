@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+.DS_Store
 
 _site/
 _post/2018-02-01-chatbot-with-ibm-api.markdown
