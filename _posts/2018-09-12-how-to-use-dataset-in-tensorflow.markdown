@@ -16,6 +16,7 @@ TensorFlow에서 `feed-dict`만을 사용해서 데이터를 처리하는 것은
 
 다행스럽게도 TensorFlow에서는 `Dataset` 이라는 built-in-API를 제공하고 있어서 위의 작업을 쉽게 처리할 수 있다. 이 포스트에서는 입력 파이프라인을 만들어서 모델에 데이터를 효율적으로 공급하는 방법을 살펴볼 것이다. 또한, 흔하게 볼 수 있는 예시를 다루면서 Dataset의 기본적인 메커니즘을 설명할 것이다.  
 
+* * *
 
 ### 개요
 
@@ -24,7 +25,8 @@ Dataset을 사용하려면 세 가지 단계를 거쳐야한다.
 2.	<strong>Iterator(반복자) 생성하기.</strong> 생성된 데이터를 사용해서 Iterator 인스턴스를 만들어 Dataset을 iterate시킨다.  
 3.	<strong>데이터 사용하기.</strong> 생성된 iterator를 사용해서 모델에 공급할 dataset으로부터 요소를 가져올 수 있다.  
   
-  
+* * *
+
 ### 데이터 불러오기
 
 일단 dataset안에 넣을 데이터가 필요하다.  
@@ -100,7 +102,11 @@ with tf.Session() as sess:
   
   
 #### csv파일에서 불러오기  
-csv파일에서 dataset으로 직접적으로 읽어올 수도 있다. 예를 들어 트윗과 좋아요가 들어있는 csv파일이 있다고 해보자.  
+csv파일에서 dataset으로 직접적으로 읽어올 수도 있다. 다음과 같이 트윗(text)과 좋아요(sentiment)가 들어있는 csv파일이 있다고 해보자.  
+
+{: refdef: style="text-align: center;"}  
+![tweets.csv](/img/posts/dataset-in-tensorflow/tweets_csv.png){: width="50%" height="50%"} 
+{: refdef}
 
 여기서 `tf.contrib.data.make_csv_dataset`을 사용하면 쉽게 `Dataset`을 만들 수 있다. Iterator는 column의 이름을 key로 하고 row 값을 가진 Tensor를 value로 하는 딕셔너리를 만든다.  
 
@@ -123,7 +129,8 @@ next는 다음을 나타낸다.
 'text': <tf.Tensor 'IteratorGetNext_15:1' shape=(?,) dtype=string>}
 {% endhighlight %}
   
-  
+* * *
+
 ### Iterator(반복자) 생성하기  
 Dataset을 생성하고 나면 어떻게 데이터를 받을 수 있을까? 이 때는 Iterator를 사용해서 dataset을 통해 iterate하고 데이터에서 실제 값을 받아올 수 있다.  
 Iterator에는 다음과 같이 네 가지 타입이 존재한다.  
@@ -356,6 +363,8 @@ with tf.Session() as sess:
     print(x,y)
 {% endhighlight %}
 
+* * *
+
 ### 데이터 사용하기  
 
 위의 예제에서 Dataset에 있는 `next` 원소의 값을 출력하기 위해서 session을 사용했다.  
@@ -435,6 +444,7 @@ Iter: 8, Loss: 0.1220
 Iter: 9, Loss: 0.1210
 {% endhighlight %}
 
+* * *
 
 ### 유용한 것들  
 #### Batch  
@@ -532,6 +542,7 @@ with tf.Session() as sess:
 [8]
 {% endhighlight %}
 
+* * *
 
 ### 전체 예제 
 #### Initializable iterator
@@ -643,9 +654,12 @@ with tf.Session() as sess:
     print('Test Loss: {:4f}'.format(sess.run(loss)))
 {% endhighlight %}
 
+* * *
 
 ### 마무리 지으면서...  
 `Dataset` API를 통해서 최적화된 입력 파이프라인을 만들어 모델을 학습, 평가, 테스트 할 수 있는 빠르고 강력한 방법을 사용할 수 있다. 이 포스트에서는 우리가 흔히 볼 수 있는 일반적인 작업의 대부분을 살펴보았다.  
+
+* * *
 
 ### Other resources
 TensorFlow dataset tutorial: [https://www.tensorflow.org/programmers_guide/datasets](https://www.tensorflow.org/programmers_guide/datasets)
