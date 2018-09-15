@@ -230,7 +230,7 @@ train_dataset = tf.data.Dataset.from_tensor_slices(train_data)
 test_dataset = tf.data.Dataset.from_tensor_slices(test_data)
 {% endhighlight %}
 
-여기서 꼼수를 쓸 수 있는데, generic Iterator를 만들어보자.  
+여기에서 generic Iterator를 만들어보자.  
 
 {% highlight python%}
 # create a iterator of the correct shape and type
@@ -322,7 +322,7 @@ sess.run(next_elements, feed_dict = {handle: train_handle})
 
 {% highlight python%}
 sess.run(train_iterator.initializer, feed_dict={ x: train_data[0], y: train_data[1]})
-    sess.run(test_iterator.initializer, feed_dict={ x: test_data[0], y: test_data[1]})
+sess.run(test_iterator.initializer, feed_dict={ x: test_data[0], y: test_data[1]})
 {% endhighlight %}
 
 이걸 종합해보면 다음과 같다.  
