@@ -511,10 +511,10 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #be52d6;
   word-break: break-word;
   padding: .1em;
-  background-color: rgba(253,246,227,.7);
+  background-color: #e9ecef;
   border-radius: 3px;
 }
 
@@ -537,13 +537,13 @@ kbd kbd {
 }
 
 pre {
-  padding: 2em;
+  padding: 1.5em;
   margin-bottom: 0;
-  background-color: #fdf6e3;
+  background-color: #e9ecef;
   overflow-x: auto;
   display: block;
   font-family: 'Nanum Gothic Coding', serif;
-  font-size: 87.5%;
+  font-size: 75%;
   color: #212529;
 }
 
