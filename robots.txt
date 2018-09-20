@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://cyc1am3n.github.io/sitemap.xml
