@@ -3,7 +3,7 @@ layout: post
 title:  "[Machine Learning] What is Machine Learning?"
 subtitle: "「 Machine Learning 」 lecture summary #1"
 date:   2018-01-16 10:19:54 +0900
-categories: computerscience
+tags: [machine-learning, coursera]
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true

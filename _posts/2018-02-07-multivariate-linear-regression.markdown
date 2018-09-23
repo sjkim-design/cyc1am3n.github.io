@@ -3,7 +3,7 @@ layout: post
 title:  "[Machine Learning] Multivariate Linear Regression"
 subtitle: "「 Machine Learning 」 lecture summary #4"
 date:   2018-02-09 15:01:54 +0900
-categories: computerscience
+tags: [machine-learning, coursera]
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true

@@ -3,7 +3,7 @@ layout: post
 title:  "[Machine Learning] Cost Function & Linear Regression"
 subtitle: "「 Machine Learning 」 lecture summary #2"
 date:   2018-02-05 10:52:54 +0900
-categories: computerscience
+tags: [machine-learning, coursera]
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true

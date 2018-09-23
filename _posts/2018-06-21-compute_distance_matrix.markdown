@@ -3,7 +3,7 @@ layout: post
 title:  "Compute Distance with Matrix"
 subtitle: "cs231n assignment1"
 date:   2018-07-06 15:50:54 +0900
-categories: computerscience
+tags: [machine-learning, cs231n]
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true
@@ -22,29 +22,29 @@ L2 distance(Euclidean distance)는 유클리드 좌표계에서 두 점 사이�
 
 {% highlight python%}
 def compute_distances_two_loops(self, X):
-    num_test = X.shape[0]
-    num_train = self.X_train.shape[0]
-    dists = np.zeros((num_test, num_train))
-    for i in range(num_test):
-         for j in range(num_train):
-            sub = np.subtract(X[i], self.X_train[j])
-            square = np.square(sub)
-            dists[i, j] = np.sqrt(np.sum(square))
-    return dists
+​    num_test = X.shape[0]
+​    num_train = self.X_train.shape[0]
+​    dists = np.zeros((num_test, num_train))
+​    for i in range(num_test):
+​         for j in range(num_train):
+​            sub = np.subtract(X[i], self.X_train[j])
+​            square = np.square(sub)
+​            dists[i, j] = np.sqrt(np.sum(square))
+​    return dists
 {% endhighlight %}
- 
+
 
 ## With One Loop  
 numpy.sum 함수를 이용해 vectorization을 했다.  sum 함수에서 axis=1 일 때는 column을 합치게 된다.  
 
 {% highlight python%}
 def compute_distances_one_loop(self, X):
-    num_test = X.shape[0]
-    num_train = self.X_train.shape[0]
-    dists = np.zeros((num_test, num_train))
-    for i in range(num_test):
-         dists[i, :] = np.sqrt(np.sum(np.square(self.X_train - X[i, :]), axis=1))
-    return dists
+​    num_test = X.shape[0]
+​    num_train = self.X_train.shape[0]
+​    dists = np.zeros((num_test, num_train))
+​    for i in range(num_test):
+​         dists[i, :] = np.sqrt(np.sum(np.square(self.X_train - X[i, :]), axis=1))
+​    return dists
 {% endhighlight %}
 
 
@@ -64,9 +64,9 @@ tile을 통해 X<sup>2</sup>와 Y<sup>2</sup>을 더하고 X * Y를 X와 Y(train
 실행 시간을 서로 비교해보면, 역시 loop가 줄어들수록 빨리 실행되는 것을 볼 수 있다.   
 {% highlight python%}
 def compute_distances_no_loops(self, X):
-    num_test = X.shape[0]
-    num_train = self.X_train.shape[0]
-    dists = np.zeros((num_test, num_train))
-    dists = np.sqrt(np.tile(np.sum(np.square(self.X_train), axis=1), (num_test, 1)) + np.tile(np.sum(np.square(X), axis=1), (num_train, 1)).T - 2 * np.dot(X, self.X_train.T))
-    return dists
+​    num_test = X.shape[0]
+​    num_train = self.X_train.shape[0]
+​    dists = np.zeros((num_test, num_train))
+​    dists = np.sqrt(np.tile(np.sum(np.square(self.X_train), axis=1), (num_test, 1)) + np.tile(np.sum(np.square(X), axis=1), (num_train, 1)).T - 2 * np.dot(X, self.X_train.T))
+​    return dists
 {% endhighlight %}

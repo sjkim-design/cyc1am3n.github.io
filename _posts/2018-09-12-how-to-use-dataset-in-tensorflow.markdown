@@ -3,7 +3,7 @@ layout: post
 title:  "TensorFlow에서 Dataset을 사용하는 방법"
 subtitle: "The built-in Input Pipeline. Never use ‘feed-dict’ anymore"
 date:   2018-09-13 20:15:00 +0900
-categories: computerscience
+tags: [machine-learning, tensorflow]
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true
@@ -30,8 +30,8 @@ Dataset을 사용하려면 세 가지 단계를 거쳐야한다.
 ### 데이터 불러오기
 
 일단 dataset안에 넣을 데이터가 필요하다.  
-  
-  
+
+
 #### numpy에서 불러오기  
 numpy 배열이 있고 그걸 tensorflow로 넣는 흔한 케이스이다. 
 
@@ -48,7 +48,7 @@ dataset = tf.data.Dataset.from_tensor_slices(x)
 features, labels = (np.random.sample((100,2)), np.random.sample((100,1)))
 dataset = tf.data.Dataset.from_tensor_slices((features,labels))
 {% endhighlight %}
-  
+
 
 #### tensor에서 불러오기  
 tensor를 사용해서 dataset을 초기화 할 수도 있다.  
@@ -57,7 +57,7 @@ tensor를 사용해서 dataset을 초기화 할 수도 있다.
 # using a tensor
 dataset = tf.data.Dataset.from_tensor_slices(tf.random_uniform([100, 2]))
 {% endhighlight %}
-  
+
 
 #### Placeholder에서 불러오기  
 dataset안의 데이터의 동적 변경을 할 때 유용한 방법인데, 자세한 내용은 아래에서 살펴보겠다.  
@@ -66,7 +66,7 @@ dataset안의 데이터의 동적 변경을 할 때 유용한 방법인데, 자�
 x = tf.placeholder(tf.float32, shape=[None,2])
 dataset = tf.data.Dataset.from_tensor_slices(x)
 {% endhighlight %}
-  
+
 
 #### generator에서 불러오기  
 generator를 사용해서 dataset을 초기화 할 수 있는데, 데이터의 원소들이 다른 크기를 가지고 있을 때 유용하다. 이런 경우에 tensor를 만들 때 사용할 데이터의 type과 shape도 지정해야 한다.  
@@ -75,18 +75,18 @@ generator를 사용해서 dataset을 초기화 할 수 있는데, 데이터의 �
 # from generator
 sequence = np.array([[[1]],[[2],[3]],[[3],[4],[5]]])
 def generator():
-    for el in sequence:
-        yield el
+​    for el in sequence:
+​        yield el
 dataset = tf.data.Dataset().batch(1).from_generator(generator,
-                                           output_types= tf.int64, 
-                                           output_shapes=(tf.TensorShape([None, 1])))
+​                                           output_types= tf.int64, 
+​                                           output_shapes=(tf.TensorShape([None, 1])))
 iter = dataset.make_initializable_iterator()
 el = iter.get_next()
 with tf.Session() as sess:
-    sess.run(iter.initializer)
-    print(sess.run(el))
-    print(sess.run(el))
-    print(sess.run(el))
+​    sess.run(iter.initializer)
+​    print(sess.run(el))
+​    print(sess.run(el))
+​    print(sess.run(el))
 {% endhighlight %}
 
 출력은 다음과 같다.  
@@ -99,8 +99,8 @@ with tf.Session() as sess:
  [4]
  [5]]
 {% endhighlight %}
-  
-  
+
+
 #### csv파일에서 불러오기  
 csv파일에서 dataset으로 직접적으로 읽어올 수도 있다. 다음과 같이 트윗(text)과 좋아요(sentiment)가 들어있는 csv파일이 있다고 해보자.  
 
@@ -119,7 +119,7 @@ next = iter.get_next()
 print(next) # next is a dict with key=columns names and value=column data
 inputs, labels = next['text'], next['sentiment']
 with  tf.Session() as sess:
-    sess.run([inputs, labels])
+​    sess.run([inputs, labels])
 {% endhighlight %}
 
 next는 다음을 나타낸다.  
@@ -128,7 +128,7 @@ next는 다음을 나타낸다.
 {'sentiment': <tf.Tensor 'IteratorGetNext_15:0' shape=(?,) dtype=int32>,
 'text': <tf.Tensor 'IteratorGetNext_15:1' shape=(?,) dtype=string>}
 {% endhighlight %}
-  
+
 * * *
 
 ### Iterator(반복자) 생성하기  
@@ -164,7 +164,7 @@ el = iter.get_next()
 
 {% highlight python%}
 with tf.Session() as sess:
-    print(sess.run(el)) # output: [ 0.42116176  0.40666069]
+​    print(sess.run(el)) # output: [ 0.42116176  0.40666069]
 {% endhighlight %}
 
 #### Initializable Iterator  
@@ -178,9 +178,9 @@ data = np.random.sample((100,2))
 iter = dataset.make_initializable_iterator() # create the iterator
 el = iter.get_next()
 with tf.Session() as sess:
-    # feed the placeholder with data
-    sess.run(iter.initializer, feed_dict={ x: data }) 
-    print(sess.run(el)) # output [ 0.52374458  0.71968478]
+​    # feed the placeholder with data
+​    sess.run(iter.initializer, feed_dict={ x: data }) 
+​    print(sess.run(el)) # output [ 0.52374458  0.71968478]
 {% endhighlight %}
 
 이때 `make_initializable_iterator`을 호출 한다. 그러면 sess가 있는 with 블록 안에서 데이터를 보내기 위해서 `initializer`명령어를 실행시키는데, 여기에서는 랜덤 numpy 배열이 데이터에 해당한다.  
@@ -235,7 +235,7 @@ test_dataset = tf.data.Dataset.from_tensor_slices(test_data)
 {% highlight python%}
 # create a iterator of the correct shape and type
 iter = tf.data.Iterator.from_structure(train_dataset.output_types,
-                                           train_dataset.output_shapes)
+​                                           train_dataset.output_shapes)
 {% endhighlight %}
 
 그리고 두 개의 초기화 연산도 만들자.   
@@ -265,17 +265,17 @@ train_dataset = tf.data.Dataset.from_tensor_slices(train_data)
 test_dataset = tf.data.Dataset.from_tensor_slices(test_data)
 # create a iterator of the correct shape and type
 iter = tf.data.Iterator.from_structure(train_dataset.output_types,
-                                           train_dataset.output_shapes)
+​                                           train_dataset.output_shapes)
 features, labels = iter.get_next()
 # create the initialisation operations
 train_init_op = iter.make_initializer(train_dataset)
 test_init_op = iter.make_initializer(test_dataset)
 with tf.Session() as sess:
-    sess.run(train_init_op) # switch to train dataset
-    for _ in range(EPOCHS):
-        sess.run([features, labels])
-    sess.run(test_init_op) # switch to val dataset
-    print(sess.run([features, labels]))
+​    sess.run(train_init_op) # switch to train dataset
+​    for _ in range(EPOCHS):
+​        sess.run([features, labels])
+​    sess.run(test_init_op) # switch to val dataset
+​    print(sess.run([features, labels]))
 {% endhighlight %}
 
 #### Feedable Iterator  
@@ -303,7 +303,7 @@ handle = tf.placeholder(tf.string, shape=[])
 
 {% highlight python%}
 iter = tf.data.Iterator.from_string_handle(
-    handle, train_dataset.output_types, train_dataset.output_shapes)
+​    handle, train_dataset.output_types, train_dataset.output_shapes)
 {% endhighlight %}
 
 또 get_next로 다음 원소를 받을 수 있고,  
@@ -344,13 +344,13 @@ test_iterator = test_dataset.make_initializable_iterator()
 # same as in the doc https://www.tensorflow.org/programmers_guide/datasets#creating_an_iterator
 handle = tf.placeholder(tf.string, shape=[])
 iter = tf.data.Iterator.from_string_handle(
-    handle, train_dataset.output_types, train_dataset.output_shapes)
+​    handle, train_dataset.output_types, train_dataset.output_shapes)
 next_elements = iter.get_next()
 
 with tf.Session() as sess:
-    train_handle = sess.run(train_iterator.string_handle())
-    test_handle = sess.run(test_iterator.string_handle())
-    
+​    train_handle = sess.run(train_iterator.string_handle())
+​    test_handle = sess.run(test_iterator.string_handle())
+​    
     # initialise iterators. 
     sess.run(train_iterator.initializer, feed_dict={ x: train_data[0], y: train_data[1]})
     sess.run(test_iterator.initializer, feed_dict={ x: test_data[0], y: test_data[1]})
@@ -383,7 +383,7 @@ print(sess.run(next_el)) # will output the current element
 {% highlight python%}
 # using two numpy arrays
 features, labels = (np.array([np.random.sample((100,2))]), 
-                    np.array([np.random.sample((100,1))]))
+​                    np.array([np.random.sample((100,1))]))
 dataset = tf.data.Dataset.from_tensor_slices((features,labels)).repeat().batch(BATCH_SIZE)
 {% endhighlight %}
 
@@ -411,7 +411,7 @@ EPOCHS = 10
 BATCH_SIZE = 16
 # using two numpy arrays
 features, labels = (np.array([np.random.sample((100,2))]), 
-                    np.array([np.random.sample((100,1))]))
+​                    np.array([np.random.sample((100,1))]))
 dataset = tf.data.Dataset.from_tensor_slices((features,labels)).repeat().batch(BATCH_SIZE)
 iter = dataset.make_one_shot_iterator()
 x, y = iter.get_next()
@@ -423,10 +423,10 @@ loss = tf.losses.mean_squared_error(prediction, y) # pass the second value from 
 train_op = tf.train.AdamOptimizer().minimize(loss)
 
 with tf.Session() as sess:
-    sess.run(tf.global_variables_initializer())
-    for i in range(EPOCHS):
-        _, loss_value = sess.run([train_op, loss])
-        print("Iter: {}, Loss: {:.4f}".format(i, loss_value))
+​    sess.run(tf.global_variables_initializer())
+​    for i in range(EPOCHS):
+​        _, loss_value = sess.run([train_op, loss])
+​        print("Iter: {}, Loss: {:.4f}".format(i, loss_value))
 {% endhighlight %}
 
 결과는 다음과 같다.  
@@ -459,7 +459,7 @@ dataset = tf.data.Dataset.from_tensor_slices(x).batch(BATCH_SIZE)
 iter = dataset.make_one_shot_iterator()
 el = iter.get_next()
 with tf.Session() as sess:
-    print(sess.run(el)) 
+​    print(sess.run(el)) 
 {% endhighlight %}
 
 결과는 다음과 같다.  
@@ -493,7 +493,7 @@ dataset = dataset.batch(BATCH_SIZE)
 iter = dataset.make_one_shot_iterator()
 el = iter.get_next()
 with tf.Session() as sess:
-    print(sess.run(el))
+​    print(sess.run(el))
 {% endhighlight %}
 
 첫 실행 결과:  
@@ -572,19 +572,19 @@ loss = tf.losses.mean_squared_error(prediction, labels) # pass the second value 
 train_op = tf.train.AdamOptimizer().minimize(loss)
 
 with tf.Session() as sess:
-    sess.run(tf.global_variables_initializer())
-    # initialise iterator with train data
-    sess.run(iter.initializer, feed_dict={ x: train_data[0], y: train_data[1], batch_size: BATCH_SIZE})
-    print('Training...')
-    for i in range(EPOCHS):
-        tot_loss = 0
-        for _ in range(n_batches):
-            _, loss_value = sess.run([train_op, loss])
-            tot_loss += loss_value
-        print("Iter: {}, Loss: {:.4f}".format(i, tot_loss / n_batches))
-    # initialise iterator with test data
-    sess.run(iter.initializer, feed_dict={ x: test_data[0], y: test_data[1], batch_size: test_data[0].shape[0]})
-    print('Test Loss: {:4f}'.format(sess.run(loss)))
+​    sess.run(tf.global_variables_initializer())
+​    # initialise iterator with train data
+​    sess.run(iter.initializer, feed_dict={ x: train_data[0], y: train_data[1], batch_size: BATCH_SIZE})
+​    print('Training...')
+​    for i in range(EPOCHS):
+​        tot_loss = 0
+​        for _ in range(n_batches):
+​            _, loss_value = sess.run([train_op, loss])
+​            tot_loss += loss_value
+​        print("Iter: {}, Loss: {:.4f}".format(i, tot_loss / n_batches))
+​    # initialise iterator with test data
+​    sess.run(iter.initializer, feed_dict={ x: test_data[0], y: test_data[1], batch_size: test_data[0].shape[0]})
+​    print('Test Loss: {:4f}'.format(sess.run(loss)))
 {% endhighlight %}
 
 <strong>학습 후 dataset을 동적으로 전환 하려면 batch size에 대해서 placeholder를 사용해야 한다.</strong>  
@@ -624,8 +624,8 @@ test_data = (np.random.sample((20,2)), np.random.sample((20,1)))
 
 # create a iterator of the correct shape and type
 iter = tf.data.Iterator.from_structure(train_dataset.output_types,
-                                           train_dataset.output_shapes)
-										   features, labels = iter.get_next()
+​                                           train_dataset.output_shapes)
+​										   features, labels = iter.get_next()
 # create the initialisation operations
 train_init_op = iter.make_initializer(train_dataset)
 test_init_op = iter.make_initializer(test_dataset)
@@ -639,19 +639,19 @@ loss = tf.losses.mean_squared_error(prediction, labels) # pass the second value 
 train_op = tf.train.AdamOptimizer().minimize(loss)
 
 with tf.Session() as sess:
-    sess.run(tf.global_variables_initializer())
-    # initialise iterator with train data
-    sess.run(train_init_op, feed_dict = {x : train_data[0], y: train_data[1], batch_size: 16})
-    print('Training...')
-    for i in range(EPOCHS):
-        tot_loss = 0
-        for _ in range(n_batches):
-            _, loss_value = sess.run([train_op, loss])
-            tot_loss += loss_value
-        print("Iter: {}, Loss: {:.4f}".format(i, tot_loss / n_batches))
-    # initialise iterator with test data
-    sess.run(test_init_op, feed_dict = {x : test_data[0], y: test_data[1], batch_size:len(test_data[0])})
-    print('Test Loss: {:4f}'.format(sess.run(loss)))
+​    sess.run(tf.global_variables_initializer())
+​    # initialise iterator with train data
+​    sess.run(train_init_op, feed_dict = {x : train_data[0], y: train_data[1], batch_size: 16})
+​    print('Training...')
+​    for i in range(EPOCHS):
+​        tot_loss = 0
+​        for _ in range(n_batches):
+​            _, loss_value = sess.run([train_op, loss])
+​            tot_loss += loss_value
+​        print("Iter: {}, Loss: {:.4f}".format(i, tot_loss / n_batches))
+​    # initialise iterator with test data
+​    sess.run(test_init_op, feed_dict = {x : test_data[0], y: test_data[1], batch_size:len(test_data[0])})
+​    print('Test Loss: {:4f}'.format(sess.run(loss)))
 {% endhighlight %}
 
 * * *

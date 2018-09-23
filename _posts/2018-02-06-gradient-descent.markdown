@@ -3,7 +3,7 @@ layout: post
 title:  "[Machine Learning] Gradient Descent"
 subtitle: "「 Machine Learning 」 lecture summary #3"
 date:   2018-02-06 17:17:54 +0900
-categories: computerscience
+tags: [machine-learning, coursera]
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true

@@ -3,7 +3,7 @@ layout: post
 title:  "Google ML Jam Week 1"
 subtitle: "구글 머신러닝 스터디 1주차 공부 자료"
 date:   2018-07-24 09:00:54 +0900
-categories: computerscience
+tags: [machine-learning, tensorflow]
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true
@@ -20,7 +20,7 @@ comments: true
 
 [1] from \__future__ -> 이전 버전의 파이썬에서도 새롭게 나타난 함수를 사용하게 만들어 줌  
 [2] matplotlib cm -> colormap  
-			gridspec -> customize figure layout of plots  
+​			gridspec -> customize figure layout of plots  
 [3] tf.logging.set_verbosity(tf.logging.ERROR) -> Sets the threshold for what messages will be logged.  
 
 ### 2. 데이터 세트 로드  

@@ -3,7 +3,7 @@ layout: post
 title:  "[Grammar] 헷갈리는 동명사 문법"
 subtitle: ""
 date:   2018-02-18 23:41:00 +0900
-categories: etc
+tags: [english]
 background: '/img/posts/english.jpg'
 comments: true
 ---
@@ -13,7 +13,7 @@ comments: true
 
 My manager will consider `giving` me a week's vacation  .
 ▶ consider의 목적어로는 to 부정사(to give)가 아닌 동명사(giving)가 와야한다.  
-  
+
 
 ##### 2. 동명사와 to 부정사를 `모두` 목적어로 갖는 동사들이 있다.
 
@@ -31,11 +31,11 @@ Jim forgot `locking` / `to lock` the door. Jim은 문을 잠근 것을 / 잠가�
 
 `+) advise, allow, permit, forbid와 같은 동사들은 '동사 + 동명사' 또는 '동사 + 목적어 + to 부정사' 형태를 갖는다.`  
 The museum dose not permit `eating / people to eat` on the premises.
-  
+
 
 ##### 3. 동명사구 관용 표현
 ![표4](/img/posts/gerund/gerund-4.png){: width="100%" height="100%"}  
-  
+
 
 ##### 4. 전치사 to + 동명사
 ![표5](/img/posts/gerund/gerund-5.png){: width="100%" height="100%"}  

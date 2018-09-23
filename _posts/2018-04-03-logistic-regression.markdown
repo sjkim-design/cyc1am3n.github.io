@@ -4,6 +4,7 @@ title:  "[Machine Learning] Logistic Regression"
 subtitle: "「 Machine Learning 」 lecture summary #5"
 date:   2018-04-10 17:30:54 +0900
 categories: computerscience
+tags: [machine-learning]
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true

@@ -1,13 +1,16 @@
+
+
 ---
 layout: post
 title:  "[이대 디저트] 그릭요거트 맛집 Greek Day(그릭데이)"
 subtitle: ""
 date:   2018-02-06 09:52:54 +0900
-categories: life
+tags: [life]
 background: '/img/posts/food.jpg'
 author: cyc1am3n
 comments: true
 ---
+
 이대 근처에 있는 그릭요거트 맛집 Greek Day를 갔다.  
 
 혼자 사는 탓에 요거트를 잘 안먹게 되었는데 이번 기회에 요거트에 눈을 뜨게 되었달까..  
