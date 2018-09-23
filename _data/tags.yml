@@ -1,0 +1,20 @@
+- slug: data-science
+  name: Data-science
+
+- slug: machine-learning
+  name: Machine-learning
+
+- slug: tensorflow
+  name: TensorFlow
+
+- slug: coursera
+  name: Coursera  
+
+- slug: cs231n
+  name: CS231n
+
+- slug: life
+  name: Life
+
+- slug: english
+  name: English

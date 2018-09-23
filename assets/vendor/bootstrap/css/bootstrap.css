@@ -509,7 +509,18 @@ mark,
   width: 95%;
   height: 95%;
 }
-
+li > time {
+  color: gray;
+  font-style: italic;
+}
+.tags > a, a.tags{
+  background-color: #e9ecef;
+  color: #be52d6;
+  padding: .4em;
+  border-radius: 3px;
+  margin: 2px;
+  line-height: 2.5;
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
