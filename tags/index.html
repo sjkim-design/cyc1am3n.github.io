@@ -6,16 +6,23 @@ permalink: /tags
 ---
 <h1>Tags</h1>
 {% for tag in site.tags %}
+{% for tag_name in site.data.tags %}
 {% assign posts = tag | last %}
-<a href="#{{tag | first}}" class="tags">{{tag | first}}&nbsp<sup>{{posts.size}}</sup></a>
+{% assign tag_slug = tag | first %}
+{% if tag_slug == tag_name.slug %}
+<a href="#{{tag_slug}}" class="tags">{{tag_name.name}}&nbsp<sup>{{posts.size}}</sup></a>
+{% endif %}
+{% endfor %}
 {% endfor %}
 <hr>
 
 {% for tag in site.tags %}
+{% for tag_name in site.data.tags %}
 {% assign t = tag | first %}
+{% if t == tag_name.slug %}
 {% assign posts = tag | last %}
 
-<h2 id="{{t}}" class=tags># {{t}}</h2>
+<h2 id="{{t}}" class=tags># {{tag_name.name}}</h2>
 <ul>
   {% for post in posts %}
   {% if post.tags contains t %}
@@ -29,4 +36,6 @@ permalink: /tags
   {% endfor %}
 </ul>
 <hr>
+{% endif %}
+{% endfor %}
 {% endfor %}

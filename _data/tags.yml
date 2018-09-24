@@ -1,8 +1,8 @@
 - slug: data-science
-  name: Data-science
+  name: Data Science
 
 - slug: machine-learning
-  name: Machine-learning
+  name: Machine Learning
 
 - slug: tensorflow
   name: TensorFlow
