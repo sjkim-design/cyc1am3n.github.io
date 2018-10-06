@@ -42,9 +42,11 @@ a {
 }
 
 blockquote {
-  font-family: 'Jeju Gothic', serif;
-  font-style: italic;
-  color: $gray-600;
+  font-family: 'Nanum Myeongjo', serif;
+  color: #646669;
+  border-left: 5px solid #ce66e2;
+  padding: 13px;
+  background-color: #dfa4e81c;
 }
 
 .section-heading {

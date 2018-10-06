@@ -220,7 +220,54 @@ svg:not(:root) {
 
 table {
   border-collapse: collapse;
+  padding: 0;
+  word-break: initial;
+  overflow-x: auto;
+  display: block;
+  font-size: 75%;
+  margin: 15px 0 30px 0;
 }
+/* */
+thead {
+  background-color: #ececec;
+}
+
+table tr {
+  border-top: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #fafafa;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #dfe2e5;
+  border-bottom: 0;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #dfe2e5;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+  margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  margin-bottom: 0;
+}
+/* */
 .center {
     display: block;
     margin-left: auto;
@@ -431,7 +478,7 @@ h6, .h6 {
 
 hr {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
