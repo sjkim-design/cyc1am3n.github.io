@@ -312,7 +312,7 @@ train_and_test = [train, test]
 
 이름이 사실 중요하지 않은 특성이라 생각 할 수도 있는데, 데이터에서 제공되는 승객들의 이름에는 Title이 존재한다.
 
-예를 들면, *Heikkinen, Miss. Laina*라는 이름에는 **Miss**라는 이름이 있는데, 이를 통해서 승객의 성별이나 나이대, 결혼 유무를 알 수가 있다.
+예를 들면, *Heikkinen, Miss. Laina*라는 이름에는 **Miss**라는 Title이 있는데, 이를 통해서 승객의 성별이나 나이대, 결혼 유무를 알 수가 있다.
 
 사실 성별이랑 나이는 이미 데이터에 들어있는 정보라서 예측 성능에 그렇게 큰 영향이 있을 것 같지는 않지만 일단 이름에서 Title을 가져오도록 해보자.
 
@@ -501,7 +501,7 @@ Name: Pclass, dtype: int64
 위에서 볼 수 있듯이 누락된 데이터의 Pclass는 3이고, train 데이터에서 Pclass가 3인 사람들의 평균 Fare가 13.675550이므로 이 값을 넣어주자.
 
 {% highlight python %}
-for dataset in train_test_data:
+for dataset in train_and_test:
 ​    dataset['Fare'] = dataset['Fare'].fillna(13.675) # The only one empty fare data's pclass is 3.
 {% endhighlight %}
 
@@ -522,7 +522,7 @@ for dataset in train_and_test:
 위에서 살펴봤듯이 형제, 자매, 배우자, 부모님, 자녀의 수가 많을 수록 생존한 경우가 많았는데, 두 개의 Feature를 합쳐서 `Family`라는 Feature로 만들자.
 
 {% highlight python %}
-for dataset in train_test_data:
+for dataset in train_and_test:
 ​    dataset["Family"] = dataset["Parch"] + dataset["SibSp"]
 ​    dataset['Family'] = dataset['Family'].astype(int)
 {% endhighlight %}
