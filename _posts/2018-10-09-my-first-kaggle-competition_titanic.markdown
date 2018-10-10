@@ -2,6 +2,7 @@
 layout: post
 title:  "캐글 타이타닉 생존자 예측 도전기 (1)"
 subtitle: "Titanic: My first Kaggle Competiton (77%)"
+post_description: "이번에는 캐글의 입문자를 위한 튜토리얼 문제라고 할 수 있는 Titanic: Machine Learning from Disaster 의 예측 모델을 python으로 풀어보는 과정에 대해서 포스트를 할 것이다."
 date:   2018-10-09 23:00:54 +0900
 tags: [data-science, machine-learning, kaggle]
 background: '/img/posts/machine-learning.png'
@@ -431,7 +432,7 @@ for dataset in train_and_test:
 
 ### 4-4. Age Feature
 
-`Age` Feature에도 NaN값은 존재하는데, 일단 빠진 값에는 나머지 모든 승객의 나의 평균을 넣어주자.
+`Age` Feature에도 NaN값은 존재하는데, 일단 빠진 값에는 나머지 모든 승객 나이의 평균을 넣어주자.
 
 한편 연속적인 numeric data를 처리하는 방법에도 여러가지가 있는데, 이번에는 `Binning`을 사용할 것이다.
 

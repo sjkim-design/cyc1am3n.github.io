@@ -351,10 +351,10 @@ with tf.Session() as sess:
 ​    train_handle = sess.run(train_iterator.string_handle())
 ​    test_handle = sess.run(test_iterator.string_handle())
 ​    
-    # initialise iterators. 
-    sess.run(train_iterator.initializer, feed_dict={ x: train_data[0], y: train_data[1]})
-    sess.run(test_iterator.initializer, feed_dict={ x: test_data[0], y: test_data[1]})
-    
+​    # initialise iterators. 
+​    sess.run(train_iterator.initializer, feed_dict={ x: train_data[0], y: train_data[1]})
+​    sess.run(test_iterator.initializer, feed_dict={ x: test_data[0], y: test_data[1]})
+​    
     for _ in range(EPOCHS):
         x,y = sess.run(next_elements, feed_dict = {handle: train_handle})
         print(x, y)
