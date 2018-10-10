@@ -595,6 +595,9 @@ li > time {
   font-size: 90%;
   color: #6c757d;
 }
+code.highlighter-rouge {
+  background-color: #e9ecef;
+}
 
 code {
   font-size: 87.5%;
