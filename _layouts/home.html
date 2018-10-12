@@ -57,7 +57,9 @@ layout: default
 
         <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
+          {% assign page_num = site.posts.size | divided_by: 5.0 %}
+          <span class="btn page_number"><span class="d-none d-md-inline"> Page: </span>1 of {{ page_num | round }}</span>
+          <a class="btn btn-primary float-right" href="{{"/posts/page2" | relative_url }}">Older <span class="d-none d-md-inline"> Posts</span> &rarr;</a>
         </div>
 
       </div>

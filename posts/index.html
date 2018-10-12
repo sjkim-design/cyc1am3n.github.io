@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Posts
-background: '/img/bg-post.jpg'
+title: Cyc1am3n's Blog
+description: No Masterpiece Was Ever Created By A Lazy Artist.
+background: '/img/bg-index.jpg'
 ---
 
 {% for post in paginator.posts %}
@@ -34,9 +35,13 @@ background: '/img/bg-post.jpg'
   <div class="clearfix">
 
     {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+      <a class="btn btn-primary float-left" href="/">&larr; Newer<span class="d-none d-md-inline"> Posts</span></a>
+      {% else %}
       <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer<span class="d-none d-md-inline"> Posts</span></a>
+      {% endif %}
     {% endif %}
-
+    <span class="btn page_number"><span class="d-none d-md-inline"> Page: </span>{{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
       <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older<span class="d-none d-md-inline"> Posts</span> &rarr;</a>
     {% endif %}
