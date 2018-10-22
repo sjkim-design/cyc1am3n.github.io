@@ -4,7 +4,7 @@ title:  "[Coursera] Intro to TensorFlow (1)"
 subtitle: "Machine Learning with TensorFlow on GCP"
 post_description: "Coursera 강의 Machine Learning with TensorFlow on Google Cloud Platform 중 세 번째 코스인 Intro to TensorFlow의 강의노트입니다."
 date:   2018-10-22 20:00:54 +0900
-tags: [data-science, machine-learning, coursera]
+tags: [data-science, machine-learning, coursera, tensorflow]
 background: '/img/posts/machine-learning.png'
 author: cyc1am3n
 comments: true
