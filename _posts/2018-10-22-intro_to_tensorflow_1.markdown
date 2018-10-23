@@ -14,15 +14,23 @@ Coursera 강의 "Machine Learning with TensorFlow on Google Cloud Platform" 중 
 
 ------
 
-# What is TensorFlow?
+<br />
+
+## What is TensorFlow?
+
+***
 
 - TensorFlow is an open-source high-performance library for `numerical computation` that uses `directed graphs`.
 - The `nodes` represent mathematical operations.(ex. add)
 - The `edges` represent the input and output of mathematical operations.
 
-------
+
+
+<br />
 
 ## Benefits  of a Directed Graph
+
+***
 
 - Directed acyclic graph(DAG) is a `language-independent` representation of the code in model.
 - This makes graphs `being portable` between different devices.
@@ -31,9 +39,11 @@ Coursera 강의 "Machine Learning with TensorFlow on Google Cloud Platform" 중 
 - TensorFlow Lite provides on-device inference of ML models on mobile devices and is available for a variety of hardware.
 - TensorFlow supports `federated` learning.
 
-***
+<br />
 
 ## TensorFlow API Hierarchy
+
+***
 
 {% include image.html file="/img/posts/intro-to-tensorflow/01.png" description="TensorFlow tolkit hierarchy" class="center-75"%}
 
@@ -43,9 +53,11 @@ Coursera 강의 "Machine Learning with TensorFlow on Google Cloud Platform" 중 
 - Set of Python modules that have `high level representation` of useful NN components. (good for custom model)
 - `Estimator` knows how to training, evaluate, create a check point, save and serve model.
 
-***
+<br />
 
 ## Lazy Evaluation
+
+***
 
 - The Python API lets you `build and run` Directed Graphs
 - Create the Graph (Build)
@@ -65,9 +77,11 @@ numpy_c = session.run(c, feed_dict=...)
 - The graph definition is separate from the training loop because this is a lazy evaluation model. (need to run the graph to get results)
 - `tf.eager`, however, allows to execute operations imperatively.
 
-***
+<br />
 
 ## Graph and Session
+
+***
 
 - `Graphs` can be processed, compiled, remotely executed, and assigned  to devices.
 - The `edges` represent data as `tensor` which are n-dimensional arrays.
@@ -78,9 +92,11 @@ numpy_c = session.run(c, feed_dict=...)
 
 - Execute TensorFlow graphs by calling `run()` on a `tf.Session`
 
-***
+<br />
 
 ## Evaluating a Tensor
+
+***
 
 - It is possible to `evaluate` a list of tensors.
 - TensorFlow in `Eager mode` makes it easier to try out things, but is not recommended for production code.
@@ -97,9 +113,11 @@ print(x-y)
 # tf.Tensor([2 3 4], shape=(3,), dtype=int32)
 {% endhighlight %}
 
-***
+<br />
 
 ## Visualizing a graph
+
+***
 
 - You can write the graph out using `tf.summary.FileWriter`
 
@@ -129,9 +147,11 @@ It's not human-readable.
 
 - The graph can be visualized in `TensorBoard`.
 
-***
+<br />
 
 ## Tensors
+
+***
 
 - A tensor is an N-dimensional array of data.
 
@@ -176,9 +196,11 @@ with tf.Session() as sess:
 # [7 4]
 {% endhighlight %}
 
-***
+<br />
 
 ## Variables
+
+***
 
 - A variable is a tensor whose value is `initialized` and then typically `changed` as the program runs.
 
@@ -242,9 +264,11 @@ with tf.Session() as sess:
 # [4 8 12]
 {% endhighlight %}
 
-***
+<br />
 
 ## Debugging TensorFlow programs
+
+***
 
 - Debugging TensorFlow programs is `similar` to debugging any piece of software 
   1. Read error messages to `understand the problem`
@@ -267,10 +291,10 @@ with tf.Session() as sess:
 x = tf.constant([[3. 2], [4, 5], [6, 7]])
 print "x.shape", x.shape
 expanded = tf.expand_dims(x, 1)
-print "expanded.shape", expanded.shape
+print("expanded.shape", expanded.shape)
 
 with tf.Session() as sess:
-​	print "expanded:\n:, expanded.eval()
+​	print("expanded:\n":, expanded.eval())
 
 # OUTPUT:
 # x.shape (3, 2)
@@ -287,10 +311,10 @@ with tf.Session() as sess:
 x = tf.constant([[3. 2], [4, 5], [6, 7]])
 print "x.shape", x.shape
 sliced = tf.slice(x, [0, 1], [2, 1])
-print "sliced.shape", sliced.shape
+print("sliced.shape", sliced.shape)
 
 with tf.Session() as sess:
-​	print "esliced:\n:, sliced.eval()
+​	print("sliced:\n:", sliced.eval())
 
 # OUTPUT:
 # x.shape (3, 2)
