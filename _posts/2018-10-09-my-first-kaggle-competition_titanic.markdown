@@ -13,8 +13,6 @@ comments: true
 
 해당 포스팅에서 사용한 코드는 [여기](https://github.com/cyc1am3n/kaggle_study/blob/master/01_titanic/01_titanic.ipynb)에서도 확인 할 수 있다.
 
-test
-
 ------
 
 ## Contents
