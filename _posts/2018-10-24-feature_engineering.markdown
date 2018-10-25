@@ -10,7 +10,7 @@ author: cyc1am3n
 comments: true
 ---
 
-Coursera 강의 "Machine Learning with TensorFlow on Google Cloud Platform" 중 세 번째 코스인 [Feature Engineering](https://www.coursera.org/learn/feature-engineering/home/welcome)의 강의노트입니다.
+Coursera 강의 "Machine Learning with TensorFlow on Google Cloud Platform" 중 네 번째 코스인 [Feature Engineering](https://www.coursera.org/learn/feature-engineering/home/welcome)의 강의노트입니다.
 
 ------
 
