@@ -85,7 +85,7 @@ $$
 
 또한 아래와 같이 하나의 노드가 2개 이상의 branch를 가질 때는 각 branch에서 얻어지는 gradient를 더해야 한다.
 
-{% include image.html file="/img/posts/cs231/lec04-02.png" class="center-95"%}
+{% include image.html file="/img/posts/cs231n/lec04-02.png" class="center-95"%}
 
 
 
