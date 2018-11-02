@@ -21,3 +21,6 @@
 
 - slug: kaggle
   name: Kaggle
+
+- slug: keras
+  name: Keras
