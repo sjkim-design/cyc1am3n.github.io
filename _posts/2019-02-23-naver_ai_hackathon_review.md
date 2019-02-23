@@ -5,7 +5,7 @@ subtitle: "Naver AI Hackathon(AI-VISION) Review"
 post_description: "약 2개월간 네이버 AI 해커톤에 참여했던 후기입니다."
 date:   2019-02-23 20:19:54 +0900
 tags: [data-science, machine-learning]
-background: "https://user-images.githubusercontent.com/11629647/53284749-bead5580-379b-11e9-8d07-3a69d109a85c.jpeg"
+background: '/img/posts/ai-vision/background.jpeg'
 author: cyc1am3n
 comments: true
 ---
