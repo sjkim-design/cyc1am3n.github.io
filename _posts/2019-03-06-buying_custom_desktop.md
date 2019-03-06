@@ -4,7 +4,7 @@ title:  "딥러닝용 조립식 컴퓨터 구매기"
 subtitle: "Buying Custom Desktop for Deep Learning"
 post_description: "딥러닝용 조립식 컴퓨터 구매기입니다."
 date:   2019-03-06 19:45:54 +0900
-tags: [Life, machine-learning]
+tags: [life, machine-learning]
 background: 'https://images.idgesg.net/images/article/2018/01/ces18_pho_016_origindesktops-100746738-large.jpg'
 author: cyc1am3n
 comments: true
