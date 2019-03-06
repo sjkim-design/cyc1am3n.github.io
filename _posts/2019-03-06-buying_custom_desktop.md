@@ -20,7 +20,7 @@ comments: true
 
 결론부터 말씀드리자면 제가 짠 견적은 다음과 같습니다.
 
-{% include image.html file="https://user-images.githubusercontent.com/11629647/53874518-ef1bac00-4045-11e9-8679-2a761e89a08f.jpg" class="center-95"%}
+{% include image.html file="https://user-images.githubusercontent.com/11629647/53876729-c3e78b80-404a-11e9-8633-f39be6c4486e.png" class="center-95"%}
 
 * **CPU**: AMD 라이젠 **2700X** (피나클릿지)
 * 메인보드: MSI B450M 박격포
