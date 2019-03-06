@@ -5,7 +5,7 @@ subtitle: "Buying Custom Desktop for Deep Learning"
 post_description: "딥러닝용 조립식 컴퓨터 구매기입니다."
 date:   2019-03-06 19:45:54 +0900
 tags: [life, machine-learning]
-background: 'https://user-images.githubusercontent.com/11629647/53876333-e7f69d00-4049-11e9-9250-83ae6154a17e.jpg'
+background: '/img/posts/custom-desktop/background.jpg'
 author: cyc1am3n
 comments: true
 ---
