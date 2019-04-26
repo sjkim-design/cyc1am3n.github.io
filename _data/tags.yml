@@ -24,3 +24,6 @@
 
 - slug: keras
   name: Keras
+
+- slug: algorithm
+  name: Algorithm
