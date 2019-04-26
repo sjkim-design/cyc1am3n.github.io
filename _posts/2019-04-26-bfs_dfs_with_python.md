@@ -5,7 +5,7 @@ subtitle: "BFS and DFS with Python"
 post_description: "파이썬으로 BFS와 DFS를 구현하는 내용입니다."
 date:   2019-04-26 15:40:54 +0900
 tags: [algorithm]
-background: 'https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2904&q=80'
+background: '/img/posts/notebook.jpg'
 author: cyc1am3n
 comments: true
 ---
