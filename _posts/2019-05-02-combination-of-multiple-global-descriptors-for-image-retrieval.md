@@ -149,7 +149,7 @@ CNN, **Image Retrieval**, **Global Descriptor**
 
 - 아래 그림과 같은 구조를 가지고 있다.
 
-{% include image.html file="https://user-images.githubusercontent.com/11629647/57060294-e0730d80-6cf3-11e9-8e88-4178f76d9fdf.png" description="BFS, Wikimedia Commons" class="center-95"%}
+{% include image.html file="https://user-images.githubusercontent.com/11629647/57060294-e0730d80-6cf3-11e9-8e88-4178f76d9fdf.png" description="The combination of multiple global descriptors (CGD) framework." class="center-95"%}
 
 #### Backbone Network
 
@@ -286,7 +286,7 @@ $$
      논문에서 제안한 아키텍쳐(CGD)를 비교했을 때는,
      "CGD > B > A" 순으로 높은 성능을 보여줬다.
 
-  {% include image.html file="https://user-images.githubusercontent.com/11629647/57060340-0ac4cb00-6cf4-11e9-8805-63641efd6204.png" description="BFS, Wikimedia Commons" class="center-50"%}
+  {% include image.html file="https://user-images.githubusercontent.com/11629647/57060340-0ac4cb00-6cf4-11e9-8805-63641efd6204.png" description="Different architecture types for training multiple global descriptors." class="center-50"%}
 
   4. Descriptor를 combine 할 때, sum과 concate를 각각 사용해서 비교했을 때는 concate의 성능이 더 좋았다.
 
