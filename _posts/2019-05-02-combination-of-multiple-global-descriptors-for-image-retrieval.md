@@ -234,11 +234,29 @@ $$
 #### Auxiliary Module: Classification Loss
 
 - 보조 모듈은 **auxiliary classification loss**를 이용해 주 모듈에서 나오는 첫 번째 global descriptor를 기반으로 CNN backbone을 fine-tune 한다.
+
+  
+
 - 보통 이런 접근법을 사용할 때는 다음 두 가지 과정을 거쳐 진행된다.
+
+  
+
   1. convolutional filter의 성능을 높이기 위해 classification loss를 통한 CNN backbone을 fine-tune 시키기
+
+     
+
   2. global descriptor의 성능을 높이기 위해 network를 fine-tune 시키기
+
+     
+
 - 하지만 여기에서는 이 방법을 변형시켜 **end-to-end** 로 가능하게끔 하나의 단계로 합쳤다.
+
+  
+
 -  auxiliary classification loss 로 학습을 시키면 **클래스 간 성질**을 가지는 image represenation을 만들 수 있으며, 네트워크를 더 **빠르게** 학습시킬 수 있고, 주 모듈의 ranking loss로만 학습시키는 것 보다 **안정적**이다.
+
+  
+
 - 한편, softmax cross-entropy loss(이하 softmax loss)에서의 **temperature scaling**과 **label smoothing**이 classification loss를 학습시키는데 도움을 준다 라는 것이 밝혀졌는데, 이를 활용한 softmax loss는 다음과 같이 표현할 수 있다.
 
 $$
