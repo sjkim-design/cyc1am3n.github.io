@@ -25,5 +25,8 @@
 - slug: keras
   name: Keras
 
+- slug: paper
+  name: Paper
+
 - slug: algorithm
   name: Algorithm

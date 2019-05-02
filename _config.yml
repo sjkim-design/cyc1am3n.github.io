@@ -1,13 +1,13 @@
 title:             Cyc1am3n's Blog
-email:             kantori321@gmail.com
-description:       No Masterpiece Was Ever Created By A Lazy Artist.
+email:             kantori321@korea.ac.kr
+description:       소소한 공부노트
 author:            cyc1am3n
 baseurl:           ""
 url:               "http://cyc1am3n.github.io"
 
 # Social Profiles
 github_username:   cyc1am3n
-instagram_username: dyc1am3n
+instagram_username: deep_in_deep_learning
 disqus_shortname: cyc1am3n
 
 # Build settings
