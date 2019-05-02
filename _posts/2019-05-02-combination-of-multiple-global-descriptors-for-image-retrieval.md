@@ -274,6 +274,9 @@ $$
   
 
 - 위의 식에서도 표현된 low-temperature parameter인 $$\tau$$ 를 통한 temperature scaling은 판단하기 어려운 입력에 대해 큰 그래디언트 값을 할당하고, 클래스 간 촘촘하거나, 넓게 퍼진 embedding에 대응하는데도 도움이 된다.
+
+  
+
 - 그렇기에 **over-fitting을 방지**하고 **embedding을 잘 학습**시키기 위해서 auxiliary classification loss에 label smoothing과 temperature scaling을 추가했다.
 
 <br />
