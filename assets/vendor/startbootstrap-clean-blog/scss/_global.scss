@@ -10,6 +10,9 @@ body {
 //  @include serif-font;
 }
 
+li , li p{
+  margin: 10px;
+}
 p {
   font-family: 'Noto Serif KR', serif;
   font-weight: 500;
